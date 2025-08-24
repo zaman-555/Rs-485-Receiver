@@ -42,6 +42,7 @@ ESP32 Dev Module → MAX485 Module → OLED Display
 - GND → GND (both MAX485 & OLED)
 - 3.3V → VCC (both MAX485 & OLED)
 
+```js
 esp32-rs485-communication/
 ├── device-a/ # Car Controller Device
 │ ├── src/
@@ -54,7 +55,7 @@ esp32-rs485-communication/
 │ │ └── config.h # Common configuration
 │ └── platformio.ini # PlatformIO configuration
 └── README.md
-
+```
 
 ## ⚙️ Configuration
 
@@ -79,7 +80,7 @@ struct Packet {
   uint8_t data;
   uint8_t checksum;
 };
-
+```
 🚦 Communication Protocol
 Command Types
 Command	     Value	Description
