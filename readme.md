@@ -81,10 +81,14 @@ struct Packet {
   uint8_t checksum;
 };
 ```
-🚦 Communication Protocol
+
+### 🚦Communication Protocol
+
+```txt
 Command Types
 Command	     Value	Description
 CMD_PING	  0x01	Keep-alive heartbeat
 CMD_DATA	  0x02	Data transmission
 CMD_ACK	      0x03	Acknowledgment
 CMD_ERROR	  0x04	Error notification
+```
